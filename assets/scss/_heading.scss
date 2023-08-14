@@ -41,6 +41,12 @@
     line-height: normal;
 }
 
+.pageHeading {
+    font-size: 85px;
+    font-weight: 600;
+    color: $theming2;
+}
+
 @include media-breakpoint(basic) {}
 @include media-breakpoint-up(sm) {}
 
@@ -90,6 +96,7 @@
         // font-size: 11px;
     }
     .para {
+        font-size: 13px;
     }
 }
 

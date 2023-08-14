@@ -1,0 +1,18 @@
+// @import "variables";
+.aboutMain {
+    padding: 180px 24px 8px;
+    & .aboutdetail {
+        font-size: 20px;
+        font-weight: 500;
+        color: $theming2;
+    }
+    & .aboutdata {
+        font-size: 13px;
+        color:#9e9bb4 ;
+        font-weight: 400;
+    }
+    & .aboutusImg {
+        height: 320px;
+        margin-top: 20px;
+    }
+}
