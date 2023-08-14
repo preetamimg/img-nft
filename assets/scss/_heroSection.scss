@@ -1,0 +1,28 @@
+.heroSection {
+    padding-top: 150px;
+    & .heroHeading {
+        font-size:85px;
+        color: $theming2;
+        line-height: normal;
+        &.heroHeadingtwo {
+            color: #6ca9a9;
+        }
+    }
+    & .heroimg {
+        height: 85px;
+        width: 265px;
+        margin-top: 8px;
+    }
+    & .heroimgtwo {
+        height: 85px;
+        width: 85px;
+        margin-top: 12px;
+
+    }
+    & .heroPara {
+        font-size: 14px;
+        font-weight: 400;
+        color: #797497;
+        padding: 16px 50px 0;
+    }
+}

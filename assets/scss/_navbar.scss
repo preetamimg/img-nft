@@ -1,0 +1,94 @@
+.navbar {
+    box-shadow: 20px 40px 30px rgba(39, 35, 67, 0.02);
+    height: 80px;
+    left: 15px;
+    // margin: 0 0 0 0;
+    padding: 0px 20px 0px;
+    // position: fixed;
+    right: 15px;
+    top: 15px;
+    width: auto;
+    z-index: 5;
+    max-width: 100%;
+    & .navbar-brand {
+        width: 120px;
+    }
+    & .navbar-nav {
+        gap: 30px;
+        & .exploreBtn {
+            font-size: 17px;
+            font-weight: 600;
+            background: #f7f8fa;
+            padding: 9px 28px !important;
+            gap: 20px;
+            color: $theming1;
+            transition: all 0.3s ease-in-out;
+            & .dots {
+                height: 7px;
+                width: 7px;
+                background-color: $theming1;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover {
+                background-color: $theming1;
+                color: #fff;
+                & .dots {
+                    background-color:#fff ;
+                }
+            }
+        }
+        & .navmainLink {
+            font-size: 17px;
+            color: $theming2;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+                background-color: $theming2;
+                height: 2px;
+                width: 0;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    & .navsocial {
+        height: 45px;
+        width: 45px;
+        background: #f7f8fa;
+        transition: all 0.3s ease-in-out;
+        padding: 15px;
+        & img {
+            transition: all 0.3s ease-out;
+        }
+        &:hover {
+            background-color: $theming2;
+            & img {
+                filter:brightness(10);
+            }
+        }
+    }
+    & .addproduct {
+        font-size: 17px;
+        font-weight: 600;
+        color: #fff;
+        background-color: $theming1;
+        padding: 10px 26px;
+        gap: 30px;
+        line-height: normal;
+        transition: all 0.3s ease-in-out;
+        & span {
+            // font-size: 18;
+            margin-bottom: 2px;
+        }
+        &:hover {
+            background-color: $theming2;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.checkBtn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: $theming1;
+    padding: 12px 120px;
+    gap: 15px;
+    transition: all 0.3s ease-in-out;
+    & .checkicon {
+        height: 10px;
+        width: 10px;
+    }
+    &:hover {
+        background-color: $theming2;
+        transform: scale(1.05);
+    }
+}

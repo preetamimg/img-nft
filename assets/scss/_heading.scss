@@ -1,0 +1,34 @@
+.heading {
+    font-size:25px ;
+    font-weight: 600;
+    color: $theming2;
+}
+.headingTitle {
+    color: rgb(235, 148, 68);
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgba(235, 149, 68, 0.148);
+    padding: 2px 12px;
+    gap: 5px;
+    & span {
+        height: 7px;
+        width: 7px;
+        background-color: rgb(235, 148, 68);
+    }
+    &.headingTitleGreen {
+        color: $theming3;
+        background-color: lighten($theming3, 43);
+        & span {
+            background-color: $theming3;
+        }
+    }
+}
+.subHeading {
+    font-size: 12px;
+    font-weight:600;
+    letter-spacing: 1.5px;
+    line-height: normal;
+    color: $theming2;
+    border-bottom: 1.8px solid $theming2;
+    padding-bottom: 5px;
+}
