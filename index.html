@@ -26,7 +26,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- *Dynamic Meta Tags (Should change for every page)* -->
-    <title>Ensure Education | Home</title>
+    <title>Studio Site</title>
         <!-- *Required meta tags* -->
     <meta name="title" content="Title here" />
     <meta name="discrption" content="Discrption here" />
@@ -41,8 +41,8 @@
     <meta property="og:description" content="Discrption here">
     <meta property="og:image" content="assets/img/logo/favicon-original.png">
     <meta property="og:image:secure_url" content="assets/img/logo/favicon-original.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/index/faviconIcon.png" />
+    <link rel="icon" type="image/x-icon" href="assets/img/index/faviconIcon.png" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
     <!-- jquery -->
@@ -61,19 +61,26 @@
 
 <body class="bg-light">
     <div class="page-loader"><div class="spinner"></div></div>
+    <a href="javascript:;" class="designedBy shadow-sm bg-white d-flex align-items-center position-fixed rounded-2 justify-content-center">
+        <img src="assets/img/index/designedwith.png" alt="logo" class="w-100 h-100">
+    </a>
     <!-- * navbar start -->
-    <nav class="navbar navbar-expand-lg bg-white position-fixed rounded-pill" aria-label="Offcanvas navbar large">
+    <nav class="navbar navbar-expand-xl bg-white position-fixed rounded-pill" aria-label="Offcanvas navbar large">
         <div class="container-fluid">
-            <a class="navbar-brand me-5" href="index.html">
+            <a class="navbar-brand me-5 navlogo" href="index.html">
                 <img src="assets/img/Navbar/logo.svg" alt="logo" class="w-100">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler shadow-none border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="menuIcon d-flex align-items-center justify-content-center">
+                    <img src="assets/img/Navbar/menu.svg" alt="menu" class="h-100 w-100 img-fluid">
+                </span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-                <div class="offcanvas-header">
-                <div class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</div>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas navbar-offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header border-bottom border-1 ">
+                <div class="offcanvas-title navlogo" id="offcanvasNavbar2Label">
+                    <img src="assets/img/Navbar/logo.svg" alt="logo" class="w-100 h-100 img-fluid">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-start flex-grow-1 pe3">
@@ -95,13 +102,15 @@
                             <a class="nav-link navmainLink fw-medium position-relative px-0" href="javascript::">Contact</a>
                         </li>
                     </ul>
-                    <div class="d-inline-flex align-items-center gap-2">
-                        <a href="javascript::" class="d-flex align-items-center justify-content-center navsocial rounded-pill">
-                            <img src="assets/img/Navbar/instagram.svg" alt="instagram" class="h-100 w-100 img-fluid">
-                        </a>
-                        <a href="javascript::" class="d-flex align-items-center justify-content-center navsocial rounded-pill">
-                            <img src="assets/img/Navbar/twitter.svg" alt="twitter" class="h-100 w-100 img-fluid">
-                        </a>
+                    <div class="d-flex flex-xl-row flex-column align-items-xl-center pt-lg-0 pt-3 gap-lg-2 gap-3">
+                        <div class="d-flex align-items-center justifycontent-center gap-2">
+                            <a href="javascript::" class="d-flex align-items-center justify-content-center navsocial rounded-pill">
+                                <img src="assets/img/Navbar/instagram.svg" alt="instagram" class="h-100 w-100 img-fluid">
+                            </a>
+                            <a href="javascript::" class="d-flex align-items-center justify-content-center navsocial rounded-pill">
+                                <img src="assets/img/Navbar/twitter.svg" alt="twitter" class="h-100 w-100 img-fluid">
+                            </a>
+                        </div>
                         <a href="javascript:;" class="d-inline-flex addproduct rounded-pill text-decoration-none align-items-center justify-content-center">
                             Add Product
                             <span class="fw-bolder">+</span>
@@ -125,7 +134,7 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                <div class="d-inline-flex align-items-center justify-content-center gap-3">
+                <div class="d-inline-flex align-items-center justify-content-center gap-sm-3 gap-1">
                     <div class="heroHeading fw-semibold">creative</div>
                     <div class="heroimg d-flex align-items-center justify-content-center rounded-pill overflow-hidden">
                         <img src="assets/img/index/heroimg1.jfif" alt="hero" class="h-100 w-100 img-fluid object-fit-cover">
@@ -142,7 +151,7 @@
                     <div class="heroHeading heroHeadingtwo fw-semibold"> collections</div>
                 </div>
             </div>
-            <div class="col-md-6 text-center heroPara mx-auto">
+            <div class="col-lg-6 col-md-8 col-sm-10 text-center heroPara mx-auto">
                 Browse a curated collection of exceptional artistic items NFT. If you are interested please contact and make a purchase on <b class="text-dark">our platform!</b>
             </div>
         </div>
@@ -169,8 +178,8 @@
                 </span>
             </div>
         </div>
-        <div class="row pt-3 pb-1">
-            <div class="col-lg-3">
+        <div class="row pt-3 pb-1 g-4">
+            <div class="col-lg-3 col-sm-6">
                 <div class="productCard bg-white shadow-sm overflowhidden rounded-1">
                     <a href="javascript::">
                         <div class="productImg overflow-hidden rounded-1">
@@ -192,8 +201,8 @@
                                 </a>
                             </div>
                         </div>
-                        <hr>
-                        <div class="productDetail pt-0 pb-4">
+                        <hr class="my-sm-3 my-2">
+                        <div class="productDetail pt-0 pb-sm-4 pb-3">
                             <div class="ProductPrice">2.95 ETH</div>
                             <div>
                                 <a href="javascript:;" class="text-decoration-none checkDetail d-flex align-items-center justify-content-between">
@@ -208,7 +217,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
                 <div class="productCard bg-white shadow-sm overflowhidden rounded-1">
                     <a href="javascript::">
                         <div class="productImg overflow-hidden rounded-1">
@@ -230,8 +239,8 @@
                                 </a>
                             </div>
                         </div>
-                        <hr>
-                        <div class="productDetail pt-0 pb-4">
+                        <hr class="my-sm-3 my-2">
+                        <div class="productDetail pt-0 pb-sm-4 pb-3">
                             <div class="ProductPrice">2.15 ETH</div>
                             <div>
                                 <a href="javascript:;" class="text-decoration-none checkDetail d-flex align-items-center justify-content-between">
@@ -246,7 +255,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
                 <div class="productCard bg-white shadow-sm overflowhidden rounded-1">
                     <a href="javascript::">
                         <div class="productImg overflow-hidden rounded-1">
@@ -268,8 +277,8 @@
                                 </a>
                             </div>
                         </div>
-                        <hr>
-                        <div class="productDetail pt-0 pb-4">
+                        <hr class="my-sm-3 my-2">
+                        <div class="productDetail pt-0 pb-sm-4 pb-3">
                             <div class="ProductPrice">6.00 ETH</div>
                             <div>
                                 <a href="javascript:;" class="text-decoration-none checkDetail d-flex align-items-center justify-content-between">
@@ -284,7 +293,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
                 <div class="productCard bg-white shadow-sm overflowhidden rounded-1">
                     <a href="javascript::">
                         <div class="productImg overflow-hidden rounded-1">
@@ -306,8 +315,8 @@
                                 </a>
                             </div>
                         </div>
-                        <hr>
-                        <div class="productDetail pt-0 pb-4">
+                        <hr class="my-sm-3 my-2">
+                        <div class="productDetail pt-0 pb-sm-4 pb-3">
                             <div class="ProductPrice">3.25 ETH</div>
                             <div>
                                 <a href="javascript:;" class="text-decoration-none checkDetail d-flex align-items-center justify-content-between">
@@ -388,9 +397,9 @@
                 </span>
             </div>
         </div>
-        <div class="row bg-white shadow-sm mt-3">
+        <div class="row bg-white shadow-sm mt-3 mx-0 rounded-1 ">
             <div class="col-md-6">
-                <div class="row py-4 px-3">
+                <div class="row py-sm-4 py-3 px-sm-3 px-2">
                     <div class="col-12">
                         <div class="d-flex align-items-center justify-content-between">
                             <a href="javascript:;" class="text-decoration-none userDetail d-flex align-items-center">
@@ -415,34 +424,235 @@
                             Best popular
                         </div>
                     </div>
-                    <div class="col-12 text-center">
-                        <a href="javascript:;" class="text-decoration-none featuredHeading">Missing Puzzle</a>
+                    <div class="col-12 text-center pt-2">
+                        <a href="javascript:;" class="text-decoration-none featuredHeading position-relative">Missing Puzzle</a>
                     </div>
-                    <div class="col-md-9 text-center pt-3 mx-auto featuredDetail">
+                    <div class="col-12 text-center pt-sm-3 pt-2 mx-auto featuredDetail">
                         A unique collection of missing puzzles. Attractive appearance and attractive power in colored wooden blocks.
                     </div>
-                    <div class="col-12 pricePosition text-center">
+                    <div class="col-12 pricePosition text-center pt-sm-4 pt-3">
                         Price Proposition
+                    </div>
+                    <div class="featuredPrice col-12 text-center">
+                        2.95 ETH
+                    </div>
+                    <div class="col-md-8 mx-auto pt-sm-4 pt-2 pb-sm-3 pb-2">
+                        <a href="javascript:;" class="text-decoration-none checkBtn checkProduct rounded-2 d-flex align-items-center justify-content-center">
+                            Check Product
+                            <span class="checkicon d-flex align-items-center justify-content-center">
+                                <img src="assets/img/index/btnicon.svg" alt="check" class="w-100 h-100 img-fluid">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="javascript:;" class="contactBuy text-decoration-none position-relativen ">Contact to buy</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6 px-0  rounded-1">
+                <a href="javascript:;" class="text-decoration-none h-100 d-flex align-items-center justify-content-center">
+                    <div class="featuredright overflow-hidden rounded-1 position-relative h-100">
+                        <img src="assets/img/index/featuredbg.webp" alt="featured" class="h-100 w-100 img-fluid object-fit-cover">
+                        <div class="imgTag position-absolute d-flex align-items-center justify-content-center rounded-1">
+                            <span class="d-flex align-items-center starImg justify-content-center"><img src="assets/img/index/star.svg" alt="star" class="h-100 w-100 img-fluid"></span>
+                            Featured
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <!-- * Featured Product Section End -->
 
 
-<!-- * video section start -->
+    <!-- * discover section start -->
+    <div class="container-fluid discoverSection">
+        <div class="row">
+            <div class="col-12 pb-3">
+                <div class="d-flex align-items-center gap-1">
+                    <div class="line"></div>
+                    <div class="linetwo"></div>
+                    <div class="linetwo"></div>
+                </div>
+            </div>
+            <div class="col-12 pb-2">
+                <div class="row align-items-end">
+                    <div class="col-md-6 discoverHeading">
+                        Discover a unique collection artistic works
+                    </div>
+                    <div class="col-md-6 para pt-md-0 pt-2">
+                        Our platform connects exceptional creators, giving a new meaning to art and artistic works. Noplomi - Purchase & Sell NFT!
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pt-md-4 pt-sm-3 pt-1">
+                <div class="swiper mySwiper cardSlider pt-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="discoverCard bg-white position-relative h-100 rounded-1">
+                                <div class="imgMain dnone bg-light position-absolute rounded-circle d-flex align-items-center justify-content-center">
+                                    <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
+                                        <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="cardHeading">
+                                    Everything you need in one <span>platform place.</span>
+                                </div>
+                                <div class="para py-sm-4 py-2">
+                                    Our mission is to support creators and show new possibilities in rendering <b class="text-dark">3D models</b> and their interesting proposals in various forms.
+                                </div>
+                                <div>
+                                    <a href="javascript:;" class="text-decoration-none checkDetail d-inline-flex align-items-center gap-3 position-relative">
+                                        Check the details
+                                        <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
+                                            <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="discoverCard bg-white position-relative h-100 rounded-1">
+                                <div class="imgMain dnone bg-light position-absolute rounded-circle d-flex align-items-center justify-content-center">
+                                    <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
+                                        <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="cardHeading">
+                                    You will find only selected products on <span>our platform.</span>
+                                </div>
+                                <div class="para py-sm-4 py-2">
+                                    <b class="text-dark">Our platform</b> is a collection of professional creators only. We do not want to create a marketplace, we only want to show unique works of artistic.
+                                </div>
+                                <div>
+                                    <a href="javascript:;" class="text-decoration-none checkDetail d-inline-flex align-items-center gap-3 position-relative">
+                                        Check the details
+                                        <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
+                                            <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="discoverCard bg-white position-relative h-100 rounded-1">
+                                <div class="imgMain dnone bg-light position-absolute rounded-circle d-flex align-items-center justify-content-center">
+                                    <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
+                                        <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="cardHeading">
+                                    Establish permanent cooperation and get attractive <span>sales offers.</span>
+                                </div>
+                                <div class="para py-sm-4 py-2">
+                                    We focus on the development platform of the application and good contact in the sell and purchase products.
+                                </div>
+                                <div>
+                                    <a href="javascript:;" class="text-decoration-none checkDetail d-inline-flex align-items-center gap-3 position-relative">
+                                        Check the details
+                                        <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
+                                            <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * discover section end -->
 
-<!-- * video section end -->
+    <!-- * selling section start -->
+    <div class="container-fluid sellingSetion position-relative ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 pb-3">
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="line"></div>
+                        <div class="linetwo"></div>
+                        <div class="linetwo"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 sellingHeading">
+                    Browse and start selling your products.
+                </div>
+                <div class="col-md-6 col-sm-8 text-center ptmd- pt-4">
+                    <a href="javascript:;" class="text-decoration-none checkBtn sellingBtn rounded-2 d-flex align-items-center justify-content-center">
+                        Check More
+                        <span class="checkicon d-flex align-items-center justify-content-center">
+                            <img src="assets/img/index/btnicon.svg" alt="check" class="w-100 h-100 img-fluid">
+                        </span>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="shape position-absolute">
+        </div>
+        <div class="d-flex align-items-center position-absolute  p-0 justify-content-center rounded-circle overflow-hidden sellingImg">
+            <img src="assets/img/index/sellingimg.jfif" alt="selling" class="h-100 w-100 img-fluid">
+        </div>
+    </div>
+    <!-- * selling section end -->
 
-<!-- * why abroad start -->
 
-<!-- * why abroad end -->
+    <!-- * footer start -->
+    <div class="container-fluid footer">
+        <div class="row g-4 justify-content-between">
+            <div class="col-lg-4 col-md-5 pe-lg-5 pe-4">
+                <div class="footerLogo">
+                    <img src="assets/img/Navbar/logo.svg" alt="logo" class="w-100">
+                </div>
+                <div class="para pt-md-4 pt-sm-3 pt-2">
+                    Noplomi is a template created with the <b class="text-dark">STUDIO tool.</b> All information contained here is fictional and preview to create your own website.
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="footerHeading">Navigation</div>
+                <ul class="list-unstyled m-0 d-flex flex-column gap1 footerlist">
+                    <li><a href="javascript:;" class="text-decoration-none footerLink">Home Page</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none footerLink">About Us</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none footerLink">Collections</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none footerLink">Simple Product</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none footerLink">Add New Product</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="footerHeading">Categories</div>
+                <ul class="list-unstyled m-0 d-flex flex-column gap1 footerlist">
+                    <li><a href="javascript:;" class="text-decoration-none footerLink">Privacu Policy</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none footerLink">Our Publishers</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none footerLink">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="footerHeading">Categories</div>
+                <div class="para pt-sm-3 pt-2 pb-sm-4 pb-3">
+                    If you need help or <b class="text-dark">
+                        have a question
+                    </b> about Noplomi, please contact us and use our advanced form.
+                </div>
+                <a href="javascript:;" class="text-decoration-none checkBtn contactBtn rounded-2 d-inline-flex align-items-center justify-content-center">
+                    Contact Now
+                    <span class="checkicon d-flex align-items-center justify-content-center">
+                        <img src="assets/img/index/btnicon2.svg" alt="check" class="w-100 h-100 img-fluid">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- * footer start -->
 
-
-<!-- * cta section start -->
-
+    <!-- * copy right section start -->
+    <div class="container-fluid copyrightsection">
+        <div class="copyrighttitle">
+            Copyright © 2022 Noplomi Platform. All right reserved.
+        </div>
+    </div>
+    <!-- * copy right section end -->
 
 <!--* navbar offcanvas start -->
 
@@ -467,18 +677,55 @@
             //     clickable: true,
             // },
             breakpoints: {
+                0: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                },
+                400: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                },
+                500: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+                },
+                640: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+                },
+                768: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+                },
+                1024: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+                },
+            },
+        });
+    </script>
+    
+    <script>
+        var swiper = new Swiper(".cardSlider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+            breakpoints: {
                 640: {
                 slidesPerView: 2,
                 spaceBetween: 20,
                 },
                 768: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 40,
                 },
-                1024: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-                },
+                // 1024: {
+                // slidesPerView: 4,
+                // spaceBetween: 20,
+                // },
             },
         });
     </script>

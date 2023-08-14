@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .fearturedProduct {
-    padding: 44px 25px;
+    padding: 44px 25px 10px 25px;
     & .userDetail {
         font-size: 13px;
         color: $theming2;
@@ -53,6 +53,21 @@
         font-size: 36px;
         font-weight: 600;
         color: $theming2;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $theming2;
+            height: 2px;
+            width: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
     }
     & .featuredDetail {
         font-size: 13px;
@@ -63,5 +78,348 @@
         font-size: 17px;
         font-weight: 500;
         color: $theming2;
+    }
+    & .featuredPrice {
+        font-size: 34px;
+        font-weight: 600;
+        color: $theming2;
+    }
+    & .contactBuy {
+        font-size: 13px;
+        font-weight: 500;
+        color: $theming3;
+        padding-bottom: 2px;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $theming3;
+            height: 2px;
+            width: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+    & .featuredright {
+        & .imgTag {
+            font-size: 14px;
+            color:#fff;
+            font-weight: 500;
+            top: 20px;
+            right: 20px;
+            gap: 10px;
+            background-color: #ffffff51;
+            padding: 10px 30px;
+            backdrop-filter: blur(8px);
+            & .starImg {
+                height: 10px;
+                width: 10px;
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .fearturedProduct {
+        & .userDetail {
+            & .userImg {
+                &::before {
+                    
+                }
+            }
+            &:hover {
+            }
+        }
+        & .navsocial {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .featuredHeading {
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredDetail {
+        }
+        & .pricePosition {
+        }
+        & .featuredPrice {
+        }
+        & .contactBuy {
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredright {
+            & .imgTag {
+                & .starImg {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .fearturedProduct {
+        & .userDetail {
+            & .userImg {
+                &::before {
+                    
+                }
+            }
+            &:hover {
+            }
+        }
+        & .navsocial {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .featuredHeading {
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredDetail {
+        }
+        & .pricePosition {
+        }
+        & .featuredPrice {
+        }
+        & .contactBuy {
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredright {
+            & .imgTag {
+                & .starImg {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .fearturedProduct {
+        padding: 44px 22px 10px 22px;
+        & .userDetail {
+            font-size: 12px;
+            margin-top: 15px;
+            & .userImg {
+                &::before {
+                    
+                }
+            }
+            &:hover {
+            }
+        }
+        & .navsocial {
+            height: 42px;
+            width: 42px;
+            padding: 14px;
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .featuredHeading {
+            font-size:30px;
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredDetail {
+            // font-size: 12px;
+        }
+        & .pricePosition {
+            font-size: 16px;
+        }
+        & .featuredPrice {
+            font-size: 30px;
+        }
+        & .contactBuy {
+            // font-size: 12px;
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredright {
+            & .imgTag {
+                font-size: 13px;
+                padding: 8px 24px;
+                & .starImg {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .fearturedProduct {
+        padding: 44px 18px 14px 18px;
+        & .userDetail {
+            & .userImg {
+                height: 36px;
+                width: 36px;
+                &::before {
+                    content: "";
+                    
+                }
+            }
+            &:hover {
+            }
+        }
+        & .navsocial {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .featuredHeading {
+            font-size: 28px;
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredDetail {
+        }
+        & .pricePosition {
+            font-size: 15px;
+        }
+        & .featuredPrice {
+        }
+        & .contactBuy {
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredright {
+            & .imgTag {
+                & .starImg {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .fearturedProduct {
+        padding: 44px 15px 22px 15px;
+        & .userDetail {
+            font-size: 11px;
+            margin-top: 10px;
+            & .userImg {
+                height: 30px;
+                width: 30px;
+                &::before {
+                    height: 10px;
+                    width: 10px;
+                    
+                }
+            }
+            &:hover {
+            }
+        }
+        & .navsocial {
+            height: 40px;
+            width: 40px;
+            padding: 12px;
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .featuredHeading {
+            font-size: 24px;
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredDetail {
+            font-size: 12px;
+        }
+        & .pricePosition {
+            font-size: 14px;
+        }
+        & .featuredPrice {
+            font-size: 26px;
+        }
+        & .contactBuy {
+            font-size: 12px;
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+        & .featuredright {
+            & .imgTag {
+                font-size: 12px;
+                padding: 6px 20px;
+                & .starImg {
+                }
+            }
+        }
     }
 }

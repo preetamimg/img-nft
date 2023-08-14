@@ -6,12 +6,183 @@
     padding: 12px 120px;
     gap: 15px;
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
     & .checkicon {
         height: 10px;
         width: 10px;
     }
+    & img {
+        transition: all 0.3s ease-in-out;
+    }
     &:hover {
         background-color: $theming2;
-        transform: scale(1.05);
+        transform: scale(1.03);
+    }
+    &.checkProduct {
+        border: 1px solid $theming2;
+        padding: 12px 0px;
+        background-color: transparent ;
+        color: $theming2;
+        transition: all 0.3s ease-in-out;
+        & img {
+            filter: invert(1);
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            background-color: $theming2;
+            color: #fff;
+            & img {
+                filter: none;
+            }
+        }
+    }
+    &.sellingBtn {
+        border: 1px solid #fff;
+        background-color: transparent;
+        & img {
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            background-color:#fff;
+            color: $theming2;
+            & img {
+                filter: invert(1);
+            }
+        }
+    }
+    &.contactBtn {
+        border: 1px solid $theming1;
+        background-color: transparent;
+        color: $theming1;
+        
+        &:hover {
+            background-color: $theming1;
+            color: #fff;
+            & img {
+                filter: brightness(10);
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .checkBtn {
+        font-size: 15px;
+        & .checkicon {
+        }
+        & img {
+        }
+        &:hover {
+        }
+        &.checkProduct {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        &.sellingBtn {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        &.contactBtn {
+            &:hover {
+                & img {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .checkBtn {
+        font-size: 14px;
+        padding: 12px 100px;
+        & .checkicon {
+        }
+        & img {
+        }
+        &:hover {
+        }
+        &.checkProduct {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        &.sellingBtn {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        &.contactBtn {
+            &:hover {
+                & img {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .checkBtn {
+        font-size: 13px;
+        padding: 8px 0 ;
+        width: 100%;
+        & .checkicon {
+        }
+        & img {
+        }
+        &:hover {
+        }
+        &.checkProduct {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        &.sellingBtn {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        &.contactBtn {
+            &:hover {
+                & img {
+                }
+            }
+        }
     }
 }

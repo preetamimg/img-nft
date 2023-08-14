@@ -2,6 +2,7 @@
     font-size:25px ;
     font-weight: 600;
     color: $theming2;
+    white-space: nowrap;
 }
 .headingTitle {
     color: rgb(235, 148, 68);
@@ -10,6 +11,7 @@
     background-color: rgba(235, 149, 68, 0.148);
     padding: 2px 12px;
     gap: 5px;
+    white-space: nowrap;
     & span {
         height: 7px;
         width: 7px;
@@ -31,4 +33,105 @@
     color: $theming2;
     border-bottom: 1.8px solid $theming2;
     padding-bottom: 5px;
+}
+.para {
+    font-size:14px ;
+    font-weight: 400;
+    color: #6d688ed6;
+    line-height: normal;
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .heading {
+    }
+    .headingTitle {
+        & span {
+        }
+        &.headingTitleGreen {
+            & span {
+            }
+        }
+    }
+    .subHeading {
+    }
+    .para {
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .heading {
+        font-size: 22px;
+    }
+    .headingTitle {
+        font-size: 13px;
+        & span {
+        }
+        &.headingTitleGreen {
+            & span {
+            }
+        }
+    }
+    .subHeading {
+        // font-size: 11px;
+    }
+    .para {
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .heading {
+        font-size: 18px;
+    }
+    .headingTitle {
+        font-size: 12px;
+        & span {
+        }
+        &.headingTitleGreen {
+            & span {
+            }
+        }
+    }
+    .subHeading {
+        font-size: 11px;
+    }
+    .para {
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .heading {
+        font-size: 16px;
+        padding-left: 5px;
+    }
+    .headingTitle {
+        font-size: 10px;
+        & span {
+        }
+        &.headingTitleGreen {
+            & span {
+            }
+        }
+    }
+    .subHeading {
+        font-size: 11px;
+        display: none;
+    }
+    .para {
+        font-size: 12px;
+    }
 }

@@ -17,11 +17,14 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-  overflow: hidden auto;
+  // overflow: hidden auto;
 }
-.input-group {
-  border: 1px solid #5a5c5d7a !important;
+.designedBy {
+  // width: 70px;
+  padding: 5px;
+  width: auto;
+  height: 25px;
+  z-index: 1111;
+  left: 20px;
+  bottom: 20px;
 }
-
-
-

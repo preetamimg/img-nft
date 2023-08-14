@@ -10,8 +10,13 @@
     width: auto;
     z-index: 5;
     max-width: 100%;
-    & .navbar-brand {
+    & .navlogo {
         width: 120px;
+    }
+    & .navbar-toggler {
+        & .menuIcon {
+            height: 25px;
+        }
     }
     & .navbar-nav {
         gap: 30px;
@@ -91,4 +96,252 @@
             color: #fff;
         }
     }
+    & .btn-close {
+        font-size: 14px;
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .navbar {
+        height: 70px;
+        & .navlogo {
+            width: 110px;
+        }
+        & .navbar-toggler {
+            & .menuIcon {
+                // height: 2px;
+            }
+        }
+        & .navbar-nav {
+            gap: 0;
+            & .exploreBtn {
+                font-size: 16px;
+                & .dots {
+                }
+                &:hover {
+                    & .dots {
+                    }
+                }
+            }
+            & .navmainLink {
+                font-size: 16px;
+                &::before {
+                }
+                &:hover {
+                    &::before {
+                    }
+                }
+            }
+        }
+        & .navsocial {
+            height: 45px;
+            width: 45px;
+            padding: 15px;
+            & img {
+
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .addproduct {
+            font-size: 16px;
+            width: 100%;
+            & span {
+            }
+            &:hover {
+            }
+        }
+        & .navbar-offcanvas {
+            max-width: 340px;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .navbar {
+        height: 70px;
+        & .navlogo {
+            width: 110px;
+        }
+        & .navbar-toggler {
+            & .menuIcon {
+                // height: 2px;
+            }
+        }
+        & .navbar-nav {
+            gap: 0;
+            & .exploreBtn {
+                font-size: 16px;
+                & .dots {
+                }
+                &:hover {
+                    & .dots {
+                    }
+                }
+            }
+            & .navmainLink {
+                font-size: 16px;
+                &::before {
+                }
+                &:hover {
+                    &::before {
+                    }
+                }
+            }
+        }
+        & .navsocial {
+            height: 45px;
+            width: 45px;
+            padding: 15px;
+            & img {
+
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .addproduct {
+            font-size: 16px;
+            width: 100%;
+            & span {
+            }
+            &:hover {
+            }
+        }
+        & .navbar-offcanvas {
+            max-width: 340px;
+        }
+    }
+    
+}
+
+@include media-breakpoint-down(md) {
+    .navbar {
+        height: 70px;
+        & .navlogo {
+            width: 110px;
+        }
+        & .navbar-toggler {
+            & .menuIcon {
+                // height: 2px;
+            }
+        }
+        & .navbar-nav {
+            gap: 0;
+            & .exploreBtn {
+                font-size: 15px;
+                & .dots {
+                }
+                &:hover {
+                    & .dots {
+                    }
+                }
+            }
+            & .navmainLink {
+                font-size: 15px;
+                &::before {
+                }
+                &:hover {
+                    &::before {
+                    }
+                }
+            }
+        }
+        & .navsocial {
+            & img {
+
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .addproduct {
+            font-size: 15px;
+            // width: 100%;
+            & span {
+            }
+            &:hover {
+            }
+        }
+        & .navbar-offcanvas {
+            max-width: 300px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .navbar {
+        height: 60px;
+        & .navlogo {
+            width: 100px;
+        }
+        & .navbar-toggler {
+            & .menuIcon {
+                height: 23px;
+            }
+        }
+        & .navbar-nav {
+            gap: 0;
+            & .exploreBtn {
+                font-size: 14px;
+                & .dots {
+                }
+                &:hover {
+                    & .dots {
+                    }
+                }
+            }
+            & .navmainLink {
+                font-size: 14px;
+                &::before {
+                }
+                &:hover {
+                    &::before {
+                    }
+                }
+            }
+        }
+        & .navsocial {
+            height: 40px;
+            width: 40px;
+            padding: 14px;
+            & img {
+
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .addproduct {
+            font-size: 14px;
+            & span {
+            }
+            &:hover {
+            }
+        }
+        & .btn-close {
+            font-size: 12px;
+        }
+    }
+    
 }

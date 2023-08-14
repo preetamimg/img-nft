@@ -1,0 +1,147 @@
+.footer {
+    padding: 38px 25px;
+    border-top: 1px solid #E2E2E3;
+    border-bottom: 1px solid #E2E2E3 ;
+    // margin-top: 10px;
+    & .footerLogo {
+        width: 130px;
+    }
+    & .footerHeading {
+        font-size: 22px;
+        color: $theming2;
+        font-weight: 600;
+    }
+    & .footerlist {
+        padding-top: 16px;
+        gap: 6px;
+        & .footerLink {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(109,104,142,.8392156863);
+            transition: all 0.3s ease-in-out;
+            display: inline-flex;
+            &:hover {
+                color: $theming3;
+                transform: translateX(5px);
+            }
+        }
+    }
+}
+
+// copy right section start 
+.copyrightsection {
+    padding: 30px 25px 40px 25px;
+    & .copyrighttitle {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(109,104,142,.8392156863);
+        line-height: normal;
+    }
+}
+// copy right section end
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .footer {
+        padding: 28px 22px;
+        & .footerLogo {
+            width: 120px;
+        }
+        & .footerHeading {
+            font-size: 20px;
+        }
+        & .footerlist {
+            padding-top: 12px;
+            gap: 6px;
+            & .footerLink {
+                &:hover {
+                }
+            }
+        }
+    }
+    
+    // copy right section start 
+    .copyrightsection {
+        & .copyrighttitle {
+        }
+    }
+    // copy right section end
+}
+
+@include media-breakpoint-down(md) {
+    .footer {
+        padding: 28px 18px;
+        & .footerLogo {
+            width: 110px;
+        }
+        & .footerHeading {
+            font-size: 18px;
+        }
+        & .footerlist {
+            padding-top: 12px;
+            gap: 4px;
+            & .footerLink {
+                font-size: 13px;
+                &:hover {
+                }
+            }
+        }
+    }
+    
+    // copy right section start 
+    .copyrightsection {
+        padding: 25px 18px;
+        & .copyrighttitle {
+            font-size: 13px;
+        }
+    }
+    // copy right section end
+}
+
+@include media-breakpoint-down(sm) {
+    .footer {
+        padding: 28px 15px;
+        & .footerLogo {
+            width: 100px;
+        }
+        & .footerHeading {
+            font-size: 16px;
+        }
+        & .footerlist {
+            padding-top: 0px;
+            gap: 1px;
+
+            & .footerLink {
+                font-size: 12px;
+                &:hover {
+                }
+            }
+        }
+    }
+    
+    // copy right section start 
+    .copyrightsection {
+        padding: 25px 15px;
+        & .copyrighttitle {
+            font-size: 12px;
+        }
+    }
+    // copy right section end
+    
+}

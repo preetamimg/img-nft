@@ -26,3 +26,85 @@
         padding: 16px 50px 0;
     }
 }
+
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .heroSection {
+        padding-top: 140px;
+        & .heroHeading {
+            font-size: 55px;
+            &.heroHeadingtwo {
+            }
+        }
+        & .heroimg {
+            height: 75px;
+            width: 240px;
+        }
+        & .heroimgtwo {
+        }
+        & .heroPara {
+            // padding: 16px 23px 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .heroSection {
+        padding-top: 140px;
+        & .heroHeading {
+            font-size: 45px;
+            &.heroHeadingtwo {
+            }
+        }
+        & .heroimg {
+            height: 60px;
+            width: 60px;
+        }
+        & .heroimgtwo {
+            height: 60px;
+            width: 60px;
+        }
+        & .heroPara {
+            // padding: 16px 23px 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .heroSection {
+        padding-top: 130px;
+        & .heroHeading {
+            font-size: 30px;
+            &.heroHeadingtwo {
+            }
+        }
+        & .heroimg {
+            height: 40px;
+            width: 40px;
+        }
+        & .heroimgtwo {
+            height: 40px;
+            width: 40px;
+        }
+        & .heroPara {
+            padding: 16px 23px 0;
+        }
+    }
+}
