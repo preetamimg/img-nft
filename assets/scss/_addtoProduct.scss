@@ -1,0 +1,12 @@
+.ProductMain {
+    // padding:0px 0 ;
+    height: 80vh;
+    background: url(../img/aboutus/addtoprouductbg.jfif) no-repeat;
+    background-position: center;
+    background-size: cover;
+    & .headingMain {
+        font-size: 95px;
+        font-weight: 700;
+        color: $white;
+    }
+}
