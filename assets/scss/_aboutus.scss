@@ -34,32 +34,31 @@
 
 @include media-breakpoint-down(xl) {
     .aboutMain {
-        padding: 105px 15px 20px;
+        padding: 160px 24px 10px;
         & .aboutdetail {
-            font-size: 16px;
-            line-height: 18px;
+            font-size: 19px;
         }
         & .aboutdata {
-            font-size: 12px;
+            // font-size: 12px;
         }
         & .aboutusImg {
-            height: 250px;
+            // height: 250px;
         }
     }
 }
 
 @include media-breakpoint-down(lg) {
     .aboutMain {
-        padding: 105px 15px 20px;
+        padding: 150px 22px 10px;
         & .aboutdetail {
-            font-size: 16px;
-            line-height: 18px;
+            font-size: 18px;
+            // line-height: 18px;
         }
         & .aboutdata {
-            font-size: 12px;
+            // font-size: 12px;
         }
         & .aboutusImg {
-            height: 250px;
+            height: 300px;
         }
     }
 }

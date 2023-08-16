@@ -342,6 +342,7 @@
         padding: 44px 15px;
         & .productCard {
             & .productImg {
+                aspect-ratio: 5/3;
                 & img {
                 }
                 &:hover {

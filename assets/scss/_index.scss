@@ -1,2 +1,164 @@
 @charset "UTF-8";
 
+.contactform {
+    & .labelInput {
+        font-size: 14px;
+        color: $theming2;
+        font-weight: 500;
+        & span {
+            font-size: 13px;
+            color: red;
+            font-weight: 600;
+        }
+    }
+    & .formInput {
+        height: 50px;
+        border: 1px solid $theming1;
+        font-size: 14px;
+        color: $theming2;
+        font-weight: 600;
+        &::placeholder {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(187, 187, 187);
+        }
+        &:focus {
+            border-color: $theming2;
+        }
+    }
+    & .selectInput {
+        height: 50px;
+        border: 1px solid $theming1;
+        font-size: 14px;
+        color: $theming2;
+        font-weight: 600;
+        // & .formOption {
+        //     border: 1px solid $theming1;
+        //     font-size: 14px;
+        //     color: $theming2;
+        //     font-weight: 600;
+        // }
+        &:focus {
+            border-color: $theming2;
+        }
+    }
+    & .messageBox {
+        height: 150px;
+        border: 1px solid $theming1;
+        font-size: 14px;
+        color: $theming2;
+        font-weight: 600;
+        resize: none;
+        &::placeholder {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(187, 187, 187);
+        }
+        &:focus {
+            border-color: $theming2;
+        }
+    }
+    & .checkTitle {
+        font-size: 13px;
+        color: rgb(118, 118, 118);
+        font-weight: 400;
+        & a {
+            color: $theming1;
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .contactform {
+        & .labelInput {
+            font-size: 13px;
+            & span {
+                font-size: 13px;
+            }
+        }
+        & .formInput {
+            height: 45px;
+            font-size: 13px;
+            &::placeholder {
+                font-size: 13px;
+            }
+            &:focus {
+            }
+        }
+        & .selectInput {
+            height: 45px;
+            font-size: 13px;
+        }
+        & .messageBox {
+            height: 120px;
+            font-size: 13px;
+            &::placeholder {
+                font-size: 13px;
+            }
+            &:focus {
+            }
+        }
+        & .checkTitle {
+            font-size: 12px;
+            & a {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .contactform {
+        & .labelInput {
+            font-size: 12px;
+            & span {
+                font-size: 12px;
+            }
+        }
+        & .formInput {
+            height: 45px;
+            font-size: 12px;
+            &::placeholder {
+                font-size: 12px;
+            }
+            &:focus {
+            }
+        }
+        & .selectInput {
+            height: 45px;
+            font-size: 12px;
+        }
+        & .messageBox {
+            height: 100px;
+            font-size: 12px;
+            &::placeholder {
+                font-size: 12px;
+            }
+            &:focus {
+            }
+        }
+        & .checkTitle {
+            font-size: 11px;
+            & a {
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .latestPublishers {
-    padding: 44px 25px;
+    padding: 10px 25px 50px;
     & .publishersHeading {
         font-size: 26px;
         color: $theming2;
@@ -80,6 +80,163 @@
             & .publishersImg {
                 & img {
                     transform: scale(1.08);
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .latestPublishers {
+        padding: 10px 22px 45px;
+        & .publishersHeading {
+            font-size: 24px;
+        }
+        & .userImg {
+            &.userImgtwo {
+            }
+            &.userImgThree {
+            }
+        }
+        & .totalPublishers {
+        }
+        & .publishersCard {
+            & .publishersImg {
+                & img {
+                }
+            }
+            & .publisherDetail {
+                & .publisheruserImg {
+                    &::before {
+                    }
+                }
+            }
+            & .username {
+            }
+            & .checkDetail {
+                & .checkDetailImg {
+                }
+                &:hover {
+                    & .checkDetailImg {
+                    }
+                }
+            }
+            &:hover {
+                & .publishersImg {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .latestPublishers {
+        padding: 18px 18px 44px;
+        & .publishersHeading {
+            font-size: 22px;
+        }
+        & .userImg {
+            &.userImgtwo {
+            }
+            &.userImgThree {
+            }
+        }
+        & .totalPublishers {
+        }
+        & .publishersCard {
+            & .publishersImg {
+                & img {
+                }
+            }
+            & .publisherDetail {
+                & .publisheruserImg {
+                    &::before {
+                    }
+                }
+            }
+            & .username {
+                font-size: 15px;
+            }
+            & .checkDetail {
+                & .checkDetailImg {
+                }
+                &:hover {
+                    & .checkDetailImg {
+                    }
+                }
+            }
+            &:hover {
+                & .publishersImg {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .latestPublishers {
+        padding: 8px 15px 44px;
+        & .publishersHeading {
+            font-size: 20px;
+        }
+        & .userImg {
+            &.userImgtwo {
+            }
+            &.userImgThree {
+            }
+        }
+        & .totalPublishers {
+            font-size: 15px;
+        }
+        & .publishersCard {
+            & .publishersImg {
+                & img {
+                }
+            }
+            & .publisherDetail {
+                & .publisheruserImg {
+                    height: 40px;
+                    width: 40px;
+                    margin-top: -20px;
+                    &::before {
+                    }
+                }
+            }
+            & .username {
+                font-size: 14px;
+            }
+            & .checkDetail {
+                & .checkDetailImg {
+                }
+                &:hover {
+                    & .checkDetailImg {
+                    }
+                }
+            }
+            &:hover {
+                & .publishersImg {
+                    & img {
+                    }
                 }
             }
         }
