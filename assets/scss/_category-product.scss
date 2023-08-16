@@ -1,0 +1,44 @@
+.categoryProduct {
+    padding: 28px 24px 44px;
+    & .categoryHeading {
+        font-size: 22px;
+        font-weight: 600;
+        color: $theming2;
+    }
+    & .card {
+        & .cardImg {
+            border-radius: 5px 0 0 5px;
+            height: 100%;
+        }
+        & .cardHeading {
+            font-size: 18px;
+            color: $theming2;
+            font-weight: 600;
+            
+        }
+        & .cardDetail {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(109,104,142,.8392156863);
+            line-height: normal;
+        }
+        & .checkDetail {
+            font-size: 13px;
+            color: $theming3;
+            transition: all 0.3s ease-in-out;
+            & .checkDetailImg {
+                height: 15px;
+                width: 15px;
+                background-color: $theming3;
+                transition: all 0.3s ease-in-out;
+                padding: 2px;
+            }
+            &:hover {
+                color:rgb(235, 148, 68); 
+                & .checkDetailImg {
+                    background-color:rgb(235, 148, 68); 
+                }
+            }
+        }
+    }
+}
