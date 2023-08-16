@@ -28,3 +28,14 @@ body{
   left: 20px;
   bottom: 20px;
 }
+
+.line {
+  width: 200px;
+  height: 2px;
+  background-color: $theming3;
+}
+.linetwo {
+  width: 15px;
+  height: 2px;
+  background-color: $theming3;
+}

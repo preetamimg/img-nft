@@ -1,0 +1,87 @@
+.latestPublishers {
+    padding: 44px 25px;
+    & .publishersHeading {
+        font-size: 26px;
+        color: $theming2;
+        font-weight: 600;
+    }
+    & .userImg {
+        height: 35px;
+        width: 35px;
+        &.userImgtwo {
+            margin-left: -15px;
+        }
+        &.userImgThree {
+            margin-left: -15px;
+        }
+    }
+    & .totalPublishers {
+        font-size: 16px;
+        font-weight: 600;
+        color: $theming2;
+    }
+    & .publishersCard {
+        & .publishersImg {
+            aspect-ratio: 5/4;
+            & img {
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & .publisherDetail {
+            padding:20px;
+            padding-top: 0;
+            & .publisheruserImg {
+                height: 50px;
+                width:50px;
+                margin-top: -25px;
+                &::before {
+                    content: "";
+                    height: 12px;
+                    width: 12px;
+                    background-color: #3361ff;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 50%;
+                    background-image: url(../img/Navbar/check.svg);
+                    background-position: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-size: 9px;
+                }
+            }
+        }
+        & .username {
+            font-size: 16px;
+            font-weight: 600;
+            color: $theming2;
+            padding-top: 14px;
+        }
+        & .checkDetail {
+            font-size: 13px;
+            color: $theming3;
+            transition: all 0.3s ease-in-out;
+            & .checkDetailImg {
+                height: 15px;
+                width: 15px;
+                background-color: $theming3;
+                transition: all 0.3s ease-in-out;
+                padding: 2px;
+            }
+            &:hover {
+                color:rgb(235, 148, 68); 
+                & .checkDetailImg {
+                    background-color:rgb(235, 148, 68); 
+                }
+            }
+        }
+        &:hover {
+            & .publishersImg {
+                & img {
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+}
