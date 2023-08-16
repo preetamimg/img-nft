@@ -77,6 +77,9 @@
     }
     .para {
     }
+    .pageHeading {
+        font-size: 80px;
+    }
 }
 
 @include media-breakpoint-down(lg) {
@@ -98,6 +101,9 @@
     .para {
         font-size: 13px;
     }
+    .pageHeading {
+        font-size: 65px;
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -117,6 +123,9 @@
         font-size: 11px;
     }
     .para {
+    }
+    .pageHeading {
+        font-size: 60px;
     }
 }
 
@@ -140,5 +149,8 @@
     }
     .para {
         font-size: 12px;
+    }
+    .pageHeading {
+        font-size: 40px;
     }
 }

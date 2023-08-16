@@ -4,6 +4,9 @@
     // z-index: 1;
     margin: 42px 0px;
     border-radius: 6px;
+    &.aboutSeliing {
+        margin: 75px 0 42px;
+    }
     &::before {
         content: '';
         position: absolute;

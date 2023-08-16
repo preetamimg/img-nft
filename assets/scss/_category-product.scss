@@ -8,12 +8,26 @@
     & .card {
         & .cardImg {
             border-radius: 5px 0 0 5px;
-            height: 100%;
+            // height: 100%;
+            height: 280px;
+            & img {
+                transition: all 0.3s ease-in-out;
+            }
         }
         & .cardHeading {
-            font-size: 18px;
+            font-size: 17px;
             color: $theming2;
             font-weight: 600;
+            &::before {
+                content: '';
+                width: 0;
+                height: 2px;
+                background-color: $theming2;
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                transition: all 0.3s ease-in-out;
+            }
             
         }
         & .cardDetail {
@@ -37,6 +51,19 @@
                 color:rgb(235, 148, 68); 
                 & .checkDetailImg {
                     background-color:rgb(235, 148, 68); 
+                }
+            }
+        }
+        &:hover {
+            & .cardHeading {
+                &::before {
+                    width: 100%;
+                }
+                
+            }
+            & .cardImg {
+                & img {
+                    transform: scale(1.09);
                 }
             }
         }
