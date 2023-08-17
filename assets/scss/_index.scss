@@ -66,6 +66,10 @@
             color: $theming1;
         }
     }
+    & .choosefile {
+        border: 1px dashed $theming1;
+    }
+    
 }
 
 @include media-breakpoint(basic) {}

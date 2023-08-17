@@ -1,0 +1,290 @@
+.simpleProduct {
+    padding: 180px 24px 20px;
+    & .simpleImg {
+        aspect-ratio: 5/4;
+    }
+    & .imgTag {
+        font-size: 14px;
+        color:#fff;
+        font-weight: 500;
+        top: 20px;
+        left: 20px;
+        gap: 10px;
+        background-color: #ffffff51;
+        padding: 10px 30px;
+        backdrop-filter: blur(8px);
+        & .starImg {
+            height: 10px;
+            width: 10px;
+        }
+    }
+    & .featuredHeading {
+        font-size: 26px;
+        font-weight: 600;
+        color: $theming2;
+    }
+    & .simpleProductImg {
+        aspect-ratio: 5/1.7;
+    }
+    & .simpleCard {
+        margin-top: 28px;
+        padding: 20px 25px;
+        & .userImg {
+            height: 40px;
+            width: 40px;
+            &::before {
+                content: "";
+                height: 12px;
+                width: 12px;
+                background-color: #3361ff;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border-radius: 50%;
+                background-image: url(../img/Navbar/check.svg);
+                background-position: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-size: 9px;
+            }
+        }
+        & .userName {
+            font-size: 14px;
+            color: $theming2;
+            font-weight: 600;
+        }
+        & .cardDetail {
+            font-size: 13px;
+            font-weight: 400;
+            color: #6d688ed6;
+            padding: 25px 0;
+        }
+        & .checkDetail {
+            font-size: 13px;
+            color: $theming3;
+            transition: all 0.3s ease-in-out;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                height: 2px;
+                width: 0;
+                background-color: $theming3;
+                transition: all 0.3s ease-in-out;
+            }
+            & .checkDetailImg {
+                height: 15px;
+                width: 15px;
+                background-color: $theming3;
+                transition: all 0.3s ease-in-out;
+                padding: 2px;
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    & .simpleproductdata {
+        padding: 12px 0;
+        & .resolution {
+            font-size: 16px;
+            font-weight: 600;
+            color: $theming2;
+        }
+        & .size {
+            font-size: 12px;
+            color: #adb5bd;
+        }
+    }
+    & .simpleData {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(109,104,142,.8392156863);
+        line-height: 25px;
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .simpleProduct {
+        padding: 160px 22px 0px;
+        & .simpleImg {
+            aspect-ratio: 5/2;
+        }
+        & .imgTag {
+            & .starImg {
+            }
+        }
+        & .featuredHeading {
+            font-size: 24px;
+        }
+        & .simpleProductImg {
+        }
+        & .simpleCard {
+            & .userImg {
+                &::before {
+                }
+            }
+            & .userName {
+            }
+            & .cardDetail {
+            }
+            & .checkDetail {
+                &::before {
+                }
+                & .checkDetailImg {
+                }
+                &:hover {
+                    &::before {
+                    }
+                }
+            }
+        }
+        & .simpleproductdata {
+            & .resolution {
+            }
+            & .size {
+            }
+        }
+        & .simpleData {
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .simpleProduct {
+        padding: 140px 18px 0px;
+        & .simpleImg {
+            aspect-ratio: 5/2;
+        }
+        & .imgTag {
+            & .starImg {
+            }
+        }
+        & .featuredHeading {
+            font-size: 22px;
+        }
+        & .simpleProductImg {
+        }
+        & .simpleCard {
+            margin-top: 22px;
+            padding: 18px 22px;
+            & .userImg {
+                &::before {
+                }
+            }
+            & .userName {
+                font-size: 13px;
+            }
+            & .cardDetail {
+                padding: 20px 0;
+            }
+            & .checkDetail {
+                &::before {
+                }
+                & .checkDetailImg {
+                }
+                &:hover {
+                    &::before {
+                    }
+                }
+            }
+        }
+        & .simpleproductdata {
+            & .resolution {
+                font-size: 15px;
+            }
+            & .size {
+            }
+        }
+        & .simpleData {
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .simpleProduct {
+        padding: 110px 15px 0px;
+        & .simpleImg {
+            aspect-ratio: 5/2;
+        }
+        & .imgTag {
+            font-size: 12px;
+            padding: 8px 25px;
+            & .starImg {
+                height: 9px;
+                width: 9px;
+            }
+        }
+        & .featuredHeading {
+            font-size: 20px;
+        }
+        & .simpleProductImg {
+        }
+        & .simpleCard {
+            margin-top: 22px;
+            padding: 15px 18px;
+            & .userImg {
+                height: 35px;
+                width: 35px;
+                &::before {
+                }
+            }
+            & .userName {
+                font-size: 12px;
+            }
+            & .cardDetail {
+                font-size: 12px;
+                padding: 15px 0;
+            }
+            & .checkDetail {
+                font-size: 12px;
+                &::before {
+                }
+                & .checkDetailImg {
+                    height: 13px;
+                    width: 13px;
+                }
+                &:hover {
+                    &::before {
+                    }
+                }
+            }
+        }
+        & .simpleproductdata {
+            padding: 8px 0;
+            & .resolution {
+                font-size: 14px;
+            }
+            & .size {
+                font-size: 11px;
+            }
+        }
+        & .simpleData {
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+}

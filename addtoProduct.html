@@ -26,7 +26,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- *Dynamic Meta Tags (Should change for every page)* -->
-    <title>Studio Site || Contact Us</title>
+    <title>Studio Site || Add To Product</title>
         <!-- *Required meta tags* -->
     <meta name="title" content="Title here" />
     <meta name="discrption" content="Discrption here" />
@@ -41,8 +41,8 @@
     <meta property="og:description" content="Discrption here">
     <meta property="og:image" content="assets/img/logo/favicon-original.png">
     <meta property="og:image:secure_url" content="assets/img/logo/favicon-original.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/index/faviconIcon.png" />
-    <link rel="icon" type="image/x-icon" href="assets/img/index/faviconIcon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Navbar/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="assets/img/Navbar/favicon.svg" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
     <!-- jquery -->
@@ -123,157 +123,238 @@
     <!-- * navbar End -->
 
     <div class="container-fluid ProductMain">
-        <div class="row h-100 align-items-center">
-            <div class="headingMain">
-                Add your product
+        <div class="d-flex align-items-center pt-5 h-100">
+            <div class="row align-items-center pt2">
+                <div class="col-12 text-center">
+                    <div class="imgTag d-inline-flex align-items-center justify-content-center rounded-1">
+                        <span class="d-flex align-items-center starImg justify-content-center"><img src="assets/img/index/star.svg" alt="star" class="h-100 w-100 img-fluid"></span>
+                        Featured
+                    </div>
+                </div>
+                <div class="headingMain text-center col-12">
+                    Add your product
+                </div>
+                <div class="col-12 text-center pt-3">
+                    <a href="javascript:;" class="text-decoration-none checkBtn sellingBtn rounded-2 d-inline-flex align-items-center justify-content-center">
+                        Check More
+                        <span class="checkicon d-flex align-items-center justify-content-center">
+                            <img src="assets/img/index/btnicon.svg" alt="check" class="w-100 h-100 img-fluid">
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- * discover section start -->
     <div class="container-fluid discoverSection pt-5">
-        <div class="row">
-            <div class="col-12 pb-3">
-                <div class="d-flex align-items-center gap-1">
-                    <div class="line"></div>
-                    <div class="linetwo"></div>
-                    <div class="linetwo"></div>
+        <div class="row pb-4 justify-content-between">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-12 pb-3">
+                        <div class="d-flex align-items-center gap-1">
+                            <div class="line"></div>
+                            <div class="linetwo"></div>
+                            <div class="linetwo"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 discoverHeading">Send your proposition and start selling </div>
+                    <div class="col-12 para pt-md-4 pt-2">
+                        If you have a question please send it to us and we will reply to you as soon as possible. Please check and view our collections gallery with detailed descriptions.
+                    </div>
+                    <div class="col-12 pt-4 px-0">
+                        <form class="row w-100 contactform mx-0 g-3">
+                            <div class="col-sm-6">
+                                <div>
+                                    <label for="name" class="labelInput">Name And Surname <span>*</span></label>
+                                    <input type="text" class="form-control shadow-none formInput mt-2" id="name" required placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <label for="name" class="labelInput">Your E-mail <span>*</span></label>
+                                    <input type="text" class="form-control shadow-none formInput mt-2" id="name" placeholder="E-mail Address" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <div>
+                                    <label for="name" class="labelInput">Name product<span>*</span></label>
+                                    <select name="" id="" class="d-flex form-select selectInput rounded-2 mt-2 form-control w-100 shadow-none" required>
+                                        <option value="" selected class="formOption">Please Select</option>
+                                        <option value="1" class="formOption">Secret Artistic</option>
+                                        <option value="2" class="formOption">Feature elements</option>
+                                        <option value="3" class="formOption">Glasstic Cosmos</option>
+                                        <option value="4" class="formOption">Amazing Bridge</option>
+                                        <option value="5" class="formOption">Missing Puzzle</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <label for="name" class="labelInput">Proposition price <span>*</span></label>
+                                    <input type="text" class="form-control shadow-none formInput mt-2" id="name" placeholder="Price ETH" required>
+                                </div>
+                            </div>
+                            <div class="col-12 para">
+                                Please attach your preview files. Please note that the file should ideally be in a .MP4 or .JPG document and should not be larger than [20MB]
+                            </div>
+                            <div class="col-12">
+                                <label name="File" required="true" data-s-5ec3790c-7481-4b4d-9efa-98569a738400="" class="choosefile formInput bg-white w-100 form-control rounded-0 d-flex align-items-center"><input name="File" hidden="" required="" data-s-5ec3790c-7481-4b4d-9efa-98569a738400="" type="file" accept=".txt,.csv,.doc,.docm,.docx,.pdf,.ppt,.pptx,.xls,.xlsm,.xlsx,.png,.jpg,.jpeg,.gif,.tiff,.svg,.mov,.wmv,.mpg,.mp4,.m4a,.mp3,.wav,.mpeg,text/plain,text/csv,application/msword,application/vnd.ms-word.document.macroenabled.12,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.ms-excel,application/vnd.ms-excel.sheet.macroenabled.12,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,image/png,image/jpeg,image/jpeg,image/gif,image/tiff,image/svg+xml,video/quicktime,video/x-ms-wmv,video/mpeg,video/mp4,audio/x-m4a,audio/mp3,audio/wav,audio/mpeg">Attach the preview file *</label>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <label for="name" class="labelInput">Your message <span>*</span></label>
+                                    <!-- <input type="text" class="form-control shadow-none formInput mt-2" id="name" placeholder="E-mail Address"> -->
+                                    <textarea name="" id="" required class="form-control mt-2 shadow-none messageBox" placeholder="Your Message Here"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 pt-3">
+                                <div class="d-flex align-items-center gap-2">
+                                    <input type="checkbox" id="checkbox">
+                                    <label for="checkbox" class="checkTitle">Click here to indicate that you have read and agree to the terms presented in the <a href="javascript:;" class="text-decoration-none">Privacy Policy agreement.</a></label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center pt-sm-5 pt-4 pb-sm-2 pb-3">
+                                <button type="submit" href="javascript:;" class="border-0 checkBtn rounded-2 d-inline-flex align-items-center justify-content-center">
+                                    Send Message 
+                                    <span class="checkicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/index/btnicon.svg" alt="check" class="w-100 h-100 img-fluid">
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 pb-2">
-                <div class="row align-items-end">
-                    <div class="col-md-6 discoverHeading">
-                        Send message with purchase proposal
+            <div class="col-md-4 formright">
+                <div class="row mx-0 gap-4">
+                    <div class="col-12 discoverSection p-0">
+                        <div class="discoverCard discoverCardTwo bg-white position-relative h-100 rounded-1">
+                            <!-- <div class="imgMain dnone bg-light positionabsolute rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
+                                    <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div> -->
+                            <div class="experience">
+                                20+
+                            </div>
+                            <div class="cardHeading">
+                                Experience in the business of <span>online contracts.</span>
+                            </div>
+                            <div class="para py-sm-4 py-2">
+                                We have been working on the application about <strong class="text-theme2">combines opportunities</strong> for personal development and helps you learn to code at every stage.
+                            </div>
+                            <div>
+                                <a href="javascript:;" class="text-decoration-none checkDetail pt-2 d-inline-flex align-items-center gap-3 position-relative">
+                                    Check the details
+                                    <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
+                                        <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 para pt-md-0 pt-2">
-                        If you are already here, you are probably interested in our product. Use the form below and <strong class="text-theme2">submit a purchase proposal.</strong>
+                    <div class="col-12 discoverSection p-0">
+                        <div class="discoverCard discoverCardTwo bg-white position-relative h-100 rounded-1">
+                            <div class="imgMain dnone bg-light positionabsolute rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                <!-- <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
+                                    <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid">
+                                </div> -->
+                                <img src="assets/img/aboutus/aboutcard.jfif" alt="meeting" class="h-100 w-100 img-fluid">
+                            </div>
+                            <!-- <div class="experience">
+                                20+
+                            </div> -->
+                            <div class="cardHeading">
+                                We create meetings with fans and <span>special events.</span>
+                            </div>
+                            <div class="para py-sm-4 py-2">
+                                <strong class="text-theme2">Would you like</strong> to accompany you on your travels with our creators? Join our group and write us a message.
+                            </div>
+                            <div>
+                                <a href="javascript:;" class="text-decoration-none checkDetail pt-2 d-inline-flex align-items-center gap-3 position-relative">
+                                    Check the details
+                                    <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
+                                        <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 pt-4 px-0">
-                <form class="row w-100 contactform mx-0">
-                    <div class="col-md-4">
-                        <div>
-                            <label for="name" class="labelInput">Name And Surname <span>*</span></label>
-                            <input type="text" class="form-control shadow-none formInput mt-2" id="name" required placeholder="Your Name">
-                        </div>
-                    </div>
-                    <div class="col-md-4 pt-md-0 pt-3">
-                        <div>
-                            <label for="name" class="labelInput">Name product<span>*</span></label>
-                            <select name="" id="" class="d-flex form-select selectInput rounded-2 mt-2 form-control w-100 shadow-none" required>
-                                <option value="" selected class="formOption">Please Select</option>
-                                <option value="1" class="formOption">Secret Artistic</option>
-                                <option value="2" class="formOption">Feature elements</option>
-                                <option value="3" class="formOption">Glasstic Cosmos</option>
-                                <option value="4" class="formOption">Amazing Bridge</option>
-                                <option value="5" class="formOption">Missing Puzzle</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-4 pt-md-0 pt-3">
-                        <div>
-                            <label for="name" class="labelInput">Your E-mail <span>*</span></label>
-                            <input type="text" class="form-control shadow-none formInput mt-2" id="name" placeholder="E-mail Address" required>
-                        </div>
-                    </div>
-                    <div class="col-12 pt-3">
-                        <div>
-                            <label for="name" class="labelInput">Your message <span>*</span></label>
-                            <!-- <input type="text" class="form-control shadow-none formInput mt-2" id="name" placeholder="E-mail Address"> -->
-                            <textarea name="" id="" required class="form-control mt-2 shadow-none messageBox" placeholder="Your Message Here"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-12 pt-3">
-                        <div class="d-flex align-items-center gap-2">
-                            <input type="checkbox" id="checkbox">
-                            <label for="checkbox" class="checkTitle">Click here to indicate that you have read and agree to the terms presented in the <a href="javascript:;" class="text-decoration-none">Privacy Policy agreement.</a></label>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center pt-sm-5 pt-4 pb-sm-2 pb-3">
-                        <button type="submit" href="javascript:;" class="border-0 checkBtn rounded-2 d-inline-flex align-items-center justify-content-center">
-                            Send Message 
-                            <span class="checkicon d-flex align-items-center justify-content-center">
-                                <img src="assets/img/index/btnicon.svg" alt="check" class="w-100 h-100 img-fluid">
-                            </span>
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-12 pt-md-4 pt-sm-3 pt-1">
-                <div class="swiper mySwiper cardSlider pt-5">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="discoverCard bg-white position-relative h-100 rounded-1">
-                                <div class="imgMain dnone bg-light position-absolute rounded-circle d-flex align-items-center justify-content-center">
-                                    <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
-                                        <!-- <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid"> -->
-                                        <div class="cardcount">1</div>
-                                    </div>
-                                </div>
-                                <div class="cardHeading">
-                                    Send us the message with <span>NFT available above.</span>
-                                </div>
-                                <div class="para py-sm-4 py-2">
-                                    <strong class="text-theme2"> We will reply </strong>to your message within 72 hours of reading the message. Wait patiently and we will answer our verdict.
-                                </div>
-                                <div>
-                                    <a href="javascript:;" class="text-decoration-none checkDetail d-inline-flex align-items-center gap-3 position-relative">
-                                        Check the details
-                                        <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
-                                            <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
-                                        </span>
-                                    </a>
-                                </div>
+        </div>
+        <div class="swiper mySwiper cardSlider pt-5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="discoverCard bg-white position-relative h-100 rounded-1">
+                        <div class="imgMain dnone bg-light position-absolute rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
+                                <!-- <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid"> -->
+                                <div class="cardcount">1</div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="discoverCard bg-white position-relative h-100 rounded-1">
-                                <div class="imgMain dnone bg-light position-absolute rounded-circle d-flex align-items-center justify-content-center">
-                                    <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
-                                        <!-- <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid"> -->
-                                        <div class="cardcount">2</div>
-                                    </div>
-                                </div>
-                                <div class="cardHeading">
-                                    Receive a reply with contract <span>details and description.</span>
-                                </div>
-                                <div class="para py-sm-4 py-2">
-                                    If our crew believes that we want to promote your products, we will contact you with an offer. Check our messages and reply us.
-                                </div>
-                                <div>
-                                    <a href="javascript:;" class="text-decoration-none checkDetail d-inline-flex align-items-center gap-3 position-relative">
-                                        Check the details
-                                        <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
-                                            <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
-                                        </span>
-                                    </a>
-                                </div>
+                        <div class="cardHeading">
+                            Send us the message with <span>NFT available above.</span>
+                        </div>
+                        <div class="para py-sm-4 py-2">
+                            <strong class="text-theme2"> We will reply </strong>to your message within 72 hours of reading the message. Wait patiently and we will answer our verdict.
+                        </div>
+                        <div>
+                            <a href="javascript:;" class="text-decoration-none checkDetail d-inline-flex align-items-center gap-3 position-relative">
+                                Check the details
+                                <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
+                                    <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="discoverCard bg-white position-relative h-100 rounded-1">
+                        <div class="imgMain dnone bg-light position-absolute rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
+                                <!-- <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid"> -->
+                                <div class="cardcount">2</div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="discoverCard bg-white position-relative h-100 rounded-1">
-                                <div class="imgMain dnone bg-light position-absolute rounded-circle d-flex align-items-center justify-content-center">
-                                    <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
-                                        <!-- <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid"> -->
-                                        <div class="cardcount">3</div>
-                                    </div>
-                                </div>
-                                <div class="cardHeading">
-                                    We complete the texts and <span>publish the product.</span>
-                                </div>
-                                <div class="para py-sm-4 py-2">
-                                    After approval, we make your product available in our category and promote your sale.
-                                </div>
-                                <div>
-                                    <a href="javascript:;" class="text-decoration-none checkDetail d-inline-flex align-items-center gap-3 position-relative">
-                                        Check the details
-                                        <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
-                                            <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
-                                        </span>
-                                    </a>
-                                </div>
+                        <div class="cardHeading">
+                            Receive a reply with contract <span>details and description.</span>
+                        </div>
+                        <div class="para py-sm-4 py-2">
+                            If our crew believes that we want to promote your products, we will contact you with an offer. Check our messages and reply us.
+                        </div>
+                        <div>
+                            <a href="javascript:;" class="text-decoration-none checkDetail d-inline-flex align-items-center gap-3 position-relative">
+                                Check the details
+                                <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
+                                    <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="discoverCard bg-white position-relative h-100 rounded-1">
+                        <div class="imgMain dnone bg-light position-absolute rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="CircleImg rounded-circle d-flex align-items-center justify-content-center h-100 w-100 ">
+                                <!-- <img src="assets/img/index/cardicon1.svg" alt="card" class="h-100 w-100 img-fluid"> -->
+                                <div class="cardcount">3</div>
                             </div>
+                        </div>
+                        <div class="cardHeading">
+                            We complete the texts and <span>publish the product.</span>
+                        </div>
+                        <div class="para py-sm-4 py-2">
+                            After approval, we make your product available in our category and promote your sale.
+                        </div>
+                        <div>
+                            <a href="javascript:;" class="text-decoration-none checkDetail d-inline-flex align-items-center gap-3 position-relative">
+                                Check the details
+                                <span class="d-flex align-items-center checkDetailImg justify-content-center rounded-circle">
+                                    <img src="assets/img/index/rightarrow.svg" alt="arrow" class="h-100 w-100 img-fluid">
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -333,14 +414,14 @@
                     <li><a href="index.html" class="text-decoration-none footerLink">Home Page</a></li>
                     <li><a href="aboutus.html" class="text-decoration-none footerLink">About Us</a></li>
                     <li><a href="collections.html" class="text-decoration-none footerLink">Collections</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none footerLink">Simple Product</a></li>
+                    <li><a href="simpleproduct.html" class="text-decoration-none footerLink">Simple Product</a></li>
                     <li><a href="addtoProduct.html" class="text-decoration-none footerLink">Add New Product</a></li>
                 </ul>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-4 col-6">
                 <div class="footerHeading">Categories</div>
                 <ul class="list-unstyled m-0 d-flex flex-column gap1 footerlist">
-                    <li><a href="javascript:;" class="text-decoration-none footerLink">Privacu Policy</a></li>
+                    <li><a href="privacyPolicy.html" class="text-decoration-none footerLink">Privacy Policy</a></li>
                     <li><a href="publishers.html" class="text-decoration-none footerLink">Our Publishers</a></li>
                     <li><a href="contactus.html" class="text-decoration-none footerLink">Contact</a></li>
                 </ul>

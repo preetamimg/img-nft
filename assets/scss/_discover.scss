@@ -90,6 +90,9 @@
             color: $theming1;
         }
     }
+    & .formright {
+        margin-top: -75px;
+    }
 }
 
 @include media-breakpoint(basic) {}
@@ -205,6 +208,9 @@
             & .experience {
                 font-size:70px;
             }
+        }
+        & .formright {
+            margin-top: 20px;
         }
     }
 }

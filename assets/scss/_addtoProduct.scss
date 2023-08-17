@@ -5,8 +5,94 @@
     background-position: center;
     background-size: cover;
     & .headingMain {
-        font-size: 95px;
-        font-weight: 700;
+        font-size: 85px;
+        font-weight: 600;
         color: $white;
+    }
+    & .imgTag {
+        font-size: 14px;
+        color:#fff;
+        font-weight: 500;
+        top: 20px;
+        right: 20px;
+        gap: 10px;
+        background-color: #ffffff51;
+        padding: 10px 30px;
+        backdrop-filter: blur(8px);
+        & .starImg {
+            height: 10px;
+            width: 10px;
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .ProductMain {
+        & .headingMain {
+            font-size: 80px;
+        }
+        & .imgTag {
+            & .starImg {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .ProductMain {
+        & .headingMain {
+            font-size: 75px;
+        }
+        & .imgTag {
+            & .starImg {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .ProductMain {
+        & .headingMain {
+            font-size: 60px;
+        }
+        & .imgTag {
+            font-size: 13px;
+            & .starImg {
+                height: 9px;
+                width: 9px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .ProductMain {
+        height: 70vh;
+        & .headingMain {
+            font-size: 32px;
+            margin-top: 10px;
+        }
+        & .imgTag {
+            font-size: 12px;
+            & .starImg {
+                height: 8px;
+                width: 8px;
+            }
+        }
     }
 }
